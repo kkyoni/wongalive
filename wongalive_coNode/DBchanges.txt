@@ -1,0 +1,2 @@
+================== 13-08_2021 ======================
+ALTER TABLE `gift_diamonds` ADD `pkmode` ENUM('true','false','') NOT NULL DEFAULT '' AFTER `gift_diamond`; 

@@ -1,0 +1,223 @@
+/*
+Imminent - Coming Soon Template by Themewagon
+Version: 1.0
+Author: ThemeWagon
+Author URI: http://www.themewagon.com
+*/
+
+
+/* =Common Styles
+-------------------------------------------------------------- */
+
+
+
+body {
+	background: url('../../img/comming-soon.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/* background: #1c1d24; */
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+h1, h2 { margin: 0 0px 20px; }
+h1 {
+	font-size: 80px;
+	font-weight: 800;
+	line-height: 80px;
+	letter-spacing: -0.08em;
+	color: #161a1b; 
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #fff;
+}
+.hero h1{
+	color: #fff;
+}
+.time-logo{
+	width: 300px;
+}
+
+#countdown div span {
+	display:block;
+	font-size: 50px;
+	line-height: 50px;
+	letter-spacing: initial;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+#countdown div {
+	display:inline-block;
+    margin: 0 34px;
+}
+
+
+/* =Content Styles
+-------------------------------------------------------------- */
+
+
+.scene,
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.counter{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100%;
+    height: 42%;
+    text-align: center;
+}
+
+.scene {
+  position: relative;
+  /* overflow: hidden; */
+   
+}
+
+.layer { position: absolute; }
+
+.layer div {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+/* Background */
+.background {
+  background: url(../images/background.jpg) no-repeat 50% 100%;
+  bottom: -20px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+
+
+.sphere img{
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7,0.7);
+	transform: scale(0.7);
+}
+
+/* Text */
+.title {
+	display: block;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 10%;
+}
+
+
+
+/* =Responsive Styles
+-------------------------------------------------------------- */
+
+@media (max-width: 320px) {
+	/* HERO */
+	.time-logo{
+		width: 100%;
+	}
+	.counter{top:40%;}
+	h1 { font-size: 30px; line-height: 30px; }
+	#countdown div span {font-size: 24px; line-height: 34px;}
+	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
+	/* TITLE & CONTACT */
+	.title { top: 15%;}
+}
+
+
+/* Landscape Phone */
+@media all and (min-width: 400px) {
+	/* HERO */
+	.counter{top:40%;}
+	h1 { font-size: 40px; line-height: 40px; }
+	#countdown div span {font-size: 24px; line-height: 34px;}
+	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
+	/* TITLE & CONTACT */
+	.title { top: 15%;}
+	
+}
+
+/* Tablet Portrait */
+@media all and (min-width: 700px) {
+	/* HERO */
+	h1 { font-size: 90px; line-height: 90px; }
+	.sub-title { font-size: 20px; line-height: 20px; margin-top: 10px; }
+	/* TITLE & CONTACT */
+	.title { top: 18%;}
+		
+}
+
+@media all and (min-width: 900px) {
+	/* HERO */
+	h1 { font-size: 120px; line-height: 120px; }
+
+	#countdown div span {font-size: 34px; line-height: 34px;}
+	
+	.sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
+	/* TITLE & CONTACT */
+	.title { top: 15%;}
+	
+}
+
+@media all and (min-width: 1200px) {
+	/* HERO */
+	h1 { font-size: 100px; line-height: 100px; }
+	#countdown div span {font-size: 44px; line-height: 44px;}
+	
+}
+
+@media all and (min-width: 1400px) {
+	/* HERO */
+	h1 { font-size: 160px; line-height: 160px; }
+	.sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
+	/* POSITIONING */
+	
+}
+
+@media all and (min-width: 1600px) {
+	/* HERO */
+	h1 { font-size: 180px; line-height: 180px; }
+	#countdown div span {font-size: 54px; line-height: 54px;}
+	.sub-title { font-size: 25px; line-height: 25px; margin-top: 25px; }
+}
+
+
+@media all and (min-width: 1920px) {
+	/* HERO */
+	h1 { font-size: 200px; line-height: 200px; }
+	.sub-title { font-size: 30px; line-height: 30px; margin-top: 30px; }
+	/* POSITIONING */
+	
+}

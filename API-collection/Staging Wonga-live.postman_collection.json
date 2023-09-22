@@ -1,0 +1,2055 @@
+{
+	"info": {
+		"_postman_id": "44b34d15-82e3-40eb-905e-27432a3cf35c",
+		"name": "Staging Wonga-live",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Api",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "password",
+											"value": "ais@1234",
+											"type": "text"
+										},
+										{
+											"key": "device_type",
+											"value": "android",
+											"type": "text"
+										},
+										{
+											"key": "device_token",
+											"value": "dIg-imQbOWw:APA91bFyP3ks7USAaryG6d_gUvxXVIGm3MvBp4nVW3o2QkSO-RRNa7Od1eZfz3JXrtYAR4xs80oKWTVDIaod6I2X9vvFMaAduikSamjGlhNQIlrRFpwkFaBZ3Vj2mNEDC62eqdDEd73i",
+											"type": "text"
+										},
+										{
+											"key": "user_type",
+											"value": "user",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "hemarao18@mailinator.com",
+											"type": "text"
+										}
+									],
+									"options": {
+										"formdata": {}
+									}
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/login",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "userdemo1@mailinator.com",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "userdemo1",
+											"type": "text"
+										},
+										{
+											"key": "contact_number",
+											"value": "9866123321",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "User",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "ais@1234",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "ais@1234",
+											"type": "text"
+										},
+										{
+											"key": "device_token",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "device_type",
+											"value": "android",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/register",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAyMjUyMTg4LCJleHAiOjE2MTUyMTIxODgsIm5iZiI6MTYwMjI1MjE4OCwianRpIjoieDBpelhyTkhXZXZoZUNMSyIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Sts0BTlsP30iqHlM9u8Gx1h5Zv9cBNdAjgp5kL6pqNA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getProfile",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getProfile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTU3MTcxNCwiZXhwIjoxNjEyNTMxNzE0LCJuYmYiOjE1OTk1NzE3MTQsImp0aSI6IlNqYWhVQldNNGE0VmtHU0siLCJzdWIiOjE5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.J9z3r9x4Ir18dMofzFpmN1l70vuWuy0-hWRYcNCJ6OE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "Peter",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "haul",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "jaymin86@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "contact_number",
+											"value": "72727272727",
+											"type": "text"
+										},
+										{
+											"key": "avater",
+											"value": "",
+											"type": "file"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/updateProfile",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"updateProfile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Send Otp",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTU3MTcxNCwiZXhwIjoxNjEyNTMxNzE0LCJuYmYiOjE1OTk1NzE3MTQsImp0aSI6IlNqYWhVQldNNGE0VmtHU0siLCJzdWIiOjE5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.J9z3r9x4Ir18dMofzFpmN1l70vuWuy0-hWRYcNCJ6OE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "contact_number",
+											"value": "7891234567",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/sendOtp",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"sendOtp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify Otp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "contact_number",
+											"value": "7891234567",
+											"type": "text"
+										},
+										{
+											"key": "otp_number",
+											"value": "2752",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/verifyOtp",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"verifyOtp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Social Media Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "device_type",
+											"value": "android",
+											"type": "text"
+										},
+										{
+											"key": "device_token",
+											"value": "1312423423434",
+											"type": "text"
+										},
+										{
+											"key": "social_id",
+											"value": "2176545165968856",
+											"type": "text"
+										},
+										{
+											"key": "social_media",
+											"value": "facebook",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "pmgrapes3@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/login",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAxNDUyOTU4LCJleHAiOjE2MTQ0MTI5NTgsIm5iZiI6MTYwMTQ1Mjk1OCwianRpIjoiRGFiS3ZNOXhEOW90WVppNSIsInN1YiI6NTAsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.44up6kIlIBWtx7H-8x7jWkxLKEuTqLpJgeXA6AQfoW8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "old_password",
+											"value": "ais@1234",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/changePassword",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"changePassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDY0NjAwMjIsImV4cCI6MTYxOTQyMDAyMiwibmJmIjoxNjA2NDYwMDIyLCJqdGkiOiJnMHp0UXZ5WFpMNDBGbHV2Iiwic3ViIjo2MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Pp2kV8QvCs-iwr0FmmiUcyZ_vX1ZbSCt8jrEtOzWWLM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/logout",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Notifications",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAxNDU1OTM0LCJleHAiOjE2MTQ0MTU5MzQsIm5iZiI6MTYwMTQ1NTkzNCwianRpIjoiWmhUT3Iwa3F3VTdqdmhkUiIsInN1YiI6NTAsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OHRAXvmcHCELIo-WGK1mtD-NpDKSoBRLzfDLbXnj4Zo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getNotifications",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getNotifications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get User Detail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAyMjUyMTg4LCJleHAiOjE2MTUyMTIxODgsIm5iZiI6MTYwMjI1MjE4OCwianRpIjoieDBpelhyTkhXZXZoZUNMSyIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Sts0BTlsP30iqHlM9u8Gx1h5Zv9cBNdAjgp5kL6pqNA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "25",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getUserDetail",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getUserDetail"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Diamonds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAxNDU1OTM0LCJleHAiOjE2MTQ0MTU5MzQsIm5iZiI6MTYwMTQ1NTkzNCwianRpIjoiWmhUT3Iwa3F3VTdqdmhkUiIsInN1YiI6NTAsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OHRAXvmcHCELIo-WGK1mtD-NpDKSoBRLzfDLbXnj4Zo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getDiamonds",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getDiamonds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Diamonds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTcyMzczMSwiZXhwIjoxNjEyNjgzNzMxLCJuYmYiOjE1OTk3MjM3MzEsImp0aSI6IjBlbVBWZU1FdEVERU85YkwiLCJzdWIiOjIzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ku5DIC08SMQX_yAMsEArEco07KZsRt8a7nCAKsuTIXs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "diamonds_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/CreateDiamonds",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"CreateDiamonds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Card Details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTcyMzczMSwiZXhwIjoxNjEyNjgzNzMxLCJuYmYiOjE1OTk3MjM3MzEsImp0aSI6IjBlbVBWZU1FdEVERU85YkwiLCJzdWIiOjIzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ku5DIC08SMQX_yAMsEArEco07KZsRt8a7nCAKsuTIXs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "card_number",
+											"value": "42424242424",
+											"type": "text"
+										},
+										{
+											"key": "card_holder_name",
+											"value": "swapnil nath",
+											"type": "text"
+										},
+										{
+											"key": "card_expiry_month",
+											"value": "07",
+											"type": "text"
+										},
+										{
+											"key": "card_expiry_year",
+											"value": "2021",
+											"type": "text"
+										},
+										{
+											"key": "billing_address",
+											"value": "Ahemdabad",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "icici",
+											"type": "text"
+										},
+										{
+											"key": "card_type",
+											"value": "mastercard",
+											"type": "text"
+										},
+										{
+											"key": "cvv",
+											"value": "233",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/add_CardDetails",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"add_CardDetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Card Details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTcyMzczMSwiZXhwIjoxNjEyNjgzNzMxLCJuYmYiOjE1OTk3MjM3MzEsImp0aSI6IjBlbVBWZU1FdEVERU85YkwiLCJzdWIiOjIzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ku5DIC08SMQX_yAMsEArEco07KZsRt8a7nCAKsuTIXs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "card_id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "card_number",
+											"value": "42424242428",
+											"type": "text"
+										},
+										{
+											"key": "card_holder_name",
+											"value": "jaymin modi",
+											"type": "text"
+										},
+										{
+											"key": "card_expiry_month",
+											"value": "08",
+											"type": "text"
+										},
+										{
+											"key": "card_expiry_year",
+											"value": "2022",
+											"type": "text"
+										},
+										{
+											"key": "billing_address",
+											"value": "Ahemdabad",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "icici",
+											"type": "text"
+										},
+										{
+											"key": "card_type",
+											"value": "visa",
+											"type": "text"
+										},
+										{
+											"key": "cvv",
+											"value": "344",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/edit_CardDetails",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"edit_CardDetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Card Details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTcyMzczMSwiZXhwIjoxNjEyNjgzNzMxLCJuYmYiOjE1OTk3MjM3MzEsImp0aSI6IjBlbVBWZU1FdEVERU85YkwiLCJzdWIiOjIzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ku5DIC08SMQX_yAMsEArEco07KZsRt8a7nCAKsuTIXs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "card_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/delete_CardDetails",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"delete_CardDetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view Card Details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTcyMzczMSwiZXhwIjoxNjEyNjgzNzMxLCJuYmYiOjE1OTk3MjM3MzEsImp0aSI6IjBlbVBWZU1FdEVERU85YkwiLCJzdWIiOjIzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ku5DIC08SMQX_yAMsEArEco07KZsRt8a7nCAKsuTIXs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/view_CardDetails",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"view_CardDetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Payment History",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAyMjUwMzE2LCJleHAiOjE2MTUyMTAzMTYsIm5iZiI6MTYwMjI1MDMxNiwianRpIjoiY1E1TUVoZjl3VG1iUVlYUiIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Rtv4Xwg0tuFr8LynqhLRXGoZHlHwSPIDmSs-rk3uUBs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "diamonds_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "transaction_id",
+											"value": "223444",
+											"type": "text"
+										},
+										{
+											"key": "card_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "159",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "sucess",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/paymenthistory",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"paymenthistory"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Payment History",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAyMjQ4NzQwLCJleHAiOjE2MTUyMDg3NDAsIm5iZiI6MTYwMjI0ODc0MCwianRpIjoiRzJxQTZ2dzJCOHR2c05YVyIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.PBZGORBGtL3hHXwlyrUVrv5KLeQFW287WEY4ObdpnSA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getpaymenthistory",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getpaymenthistory"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Count Diamond",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5jb1wvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDc1Njc1MCwiZXhwIjoxNjEzNzE2NzUwLCJuYmYiOjE2MDA3NTY3NTAsImp0aSI6IjdlN1pkYm9QSHVPWHRBWHoiLCJzdWIiOjI1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.g8BFlx4Jatgavr7pcngI8zlb81veE8yVm8Is36_sQWA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/countDiamond",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"countDiamond"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Report User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjA1NjAwNzQ3LCJleHAiOjE2MTg1NjA3NDcsIm5iZiI6MTYwNTYwMDc0NywianRpIjoibmNxRG5FTEEzMmtKRU51NyIsInN1YiI6NjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Pwfa50DA8NtP5dmizBYIafOwme7K8SviSz9KIzzNPnI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category_id",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "receive_id",
+											"value": "25",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/reportUser",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"reportUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create User Follower",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDYxMjc2NzMsImV4cCI6MTYxOTA4NzY3MywibmJmIjoxNjA2MTI3NjczLCJqdGkiOiJzQUd4MnFYTk1BRUZuaTJjIiwic3ViIjo1MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.MFSJdP1Q6ep9uLnrZ06QPQX3-QVI6tB3s2i52z0Q6Ts",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "63",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "follow",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/createUserFollower",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"createUserFollower"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Unfollow User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5jb1wvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDc1Njc1MCwiZXhwIjoxNjEzNzE2NzUwLCJuYmYiOjE2MDA3NTY3NTAsImp0aSI6IjdlN1pkYm9QSHVPWHRBWHoiLCJzdWIiOjI1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.g8BFlx4Jatgavr7pcngI8zlb81veE8yVm8Is36_sQWA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/unfollowUser",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"unfollowUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Followers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAwOTMzMzA4LCJleHAiOjE2MTM4OTMzMDgsIm5iZiI6MTYwMDkzMzMwOCwianRpIjoidzE5T0hxQmhlaUd0eEhrQSIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.kviBlOPE0lZFtAVY0utvQCsNwiPY9ghwYxxjMAzEDX0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getFollowers",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getFollowers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Following",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5jb1wvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDc4MDg0NiwiZXhwIjoxNjEzNzQwODQ2LCJuYmYiOjE2MDA3ODA4NDYsImp0aSI6IldRQ2hTV29MUU9tcjVwNlciLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uBvfNcYi-As2LHZdF6vhKFdiYQQq8yMjef8l9eHsS7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getFollowing",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getFollowing"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Block User Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvcmVnaXN0ZXIiLCJpYXQiOjE2MDU2MDkxMDYsImV4cCI6MTYxODU2OTEwNiwibmJmIjoxNjA1NjA5MTA2LCJqdGkiOiI4ZTdIZldNOE4xM2NtUnpnIiwic3ViIjo5OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.lvI-ffPdvmuQzIU-8RHL61ZPeo3Bck682dGx3Zfdz6g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "block_id",
+											"value": "51",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "unblock",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/blockUserCreate",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"blockUserCreate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Block User List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvcmVnaXN0ZXIiLCJpYXQiOjE2MDU2MDkxMDYsImV4cCI6MTYxODU2OTEwNiwibmJmIjoxNjA1NjA5MTA2LCJqdGkiOiI4ZTdIZldNOE4xM2NtUnpnIiwic3ViIjo5OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.lvI-ffPdvmuQzIU-8RHL61ZPeo3Bck682dGx3Zfdz6g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/blockUserList",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"blockUserList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Report Category",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAwNzU5ODI0LCJleHAiOjE2MTM3MTk4MjQsIm5iZiI6MTYwMDc1OTgyNCwianRpIjoiNEN3aEJGQjJaSUJ3Ulp4aSIsInN1YiI6MTksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.huB290rgDI_NggkkKIMbVGgJ35-21WQObSOfsWFpLhI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/reportCategory",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"reportCategory"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Live Streaming",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDYyMTAxNDksImV4cCI6MTYxOTE3MDE0OSwibmJmIjoxNjA2MjEwMTQ5LCJqdGkiOiJFVUpGV1I5bUdlZ0t4QjlQIiwic3ViIjo1MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.BdMRXjLWZ1BEynfjH6Btz3Mq2URrzi_M1qjHf4LX6ks",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "countrequestqwerty",
+											"type": "text"
+										}
+									],
+									"options": {
+										"formdata": {}
+									}
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/CreateLiveStreaming",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"CreateLiveStreaming"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LiveStreamingStatus",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDY4ODc2MjgsImV4cCI6MTYxOTg0NzYyOCwibmJmIjoxNjA2ODg3NjI4LCJqdGkiOiJVbXN6ck83VkVKWXhSMlZjIiwic3ViIjo1MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.n_al29CZkdw6gtu3xDXsXI-G4eruGNUv9Qx41GsLW4c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "power_oo7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/LiveStreamingStatus",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"LiveStreamingStatus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LiveStreamingStatusoffline",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAzOTU0MzYwLCJleHAiOjE2MTY5MTQzNjAsIm5iZiI6MTYwMzk1NDM2MCwianRpIjoiWHM4UTN0SDlIRFU4Z0JBTiIsInN1YiI6MTIzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.hBPd3CO9JLPaI_4otnjZ_TvhjTgI8aSrq1V5SO4zY0Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "flag_live",
+											"type": "text"
+										}
+									],
+									"options": {
+										"formdata": {}
+									}
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/LiveStreamingStatusUserOffline",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"LiveStreamingStatusUserOffline"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Host Live Streaming Status Offline",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAzMTcyMzk1LCJleHAiOjE2MTYxMzIzOTUsIm5iZiI6MTYwMzE3MjM5NSwianRpIjoiWExCVko4VDFYRzE0dWNFMyIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.PG-S30hgmiLi73uHZVLMedpz6SXVxWeF1GTpggxmOSU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "qwertyuiop",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/LiveStreamingStatusOffline",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"LiveStreamingStatusOffline"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Gift Diamonds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAyMjUyMTg4LCJleHAiOjE2MTUyMTIxODgsIm5iZiI6MTYwMjI1MjE4OCwianRpIjoieDBpelhyTkhXZXZoZUNMSyIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Sts0BTlsP30iqHlM9u8Gx1h5Zv9cBNdAjgp5kL6pqNA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "sender_id",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "receive_id",
+											"value": "51",
+											"type": "text"
+										},
+										{
+											"key": "gift_diamond",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "unique_id",
+											"value": "demoqwedcx",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/addGiftDiamonds",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"addGiftDiamonds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Gift Diamonds List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAyMjQ2ODk1LCJleHAiOjE2MTUyMDY4OTUsIm5iZiI6MTYwMjI0Njg5NSwianRpIjoicGN4dHlvMExod1ZyakpSQSIsInN1YiI6NTEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VgnAmwNiwvr1sX3vKYPfBx8gP7qfyjC6LotD6KS7JQs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "receive_id",
+											"value": "57",
+											"type": "text"
+										},
+										{
+											"key": "unique_id",
+											"value": "qwerty",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/GiftDiamondsList",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"GiftDiamondsList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Live Count user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDY4ODc2MjgsImV4cCI6MTYxOTg0NzYyOCwibmJmIjoxNjA2ODg3NjI4LCJqdGkiOiJVbXN6ck83VkVKWXhSMlZjIiwic3ViIjo1MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.n_al29CZkdw6gtu3xDXsXI-G4eruGNUv9Qx41GsLW4c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "power_oo7",
+											"type": "text"
+										},
+										{
+											"key": "comment_id",
+											"value": "3",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"formdata": {}
+									}
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/LiveCountUser",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"LiveCountUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Unread Notifications",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjAzMjcxODQ0LCJleHAiOjE2MTYyMzE4NDQsIm5iZiI6MTYwMzI3MTg0NCwianRpIjoiU3p5dlpVd3JoamxZVkowSiIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.K91u5_q2yXX3n9qoU594a3ijOJ39sVNYT_kNZ51c6hI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "notification_id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "read",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/readunreadNotifications",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"readunreadNotifications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Live Count Host",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDU4NTcxMzcsImV4cCI6MTYxODgxNzEzNywibmJmIjoxNjA1ODU3MTM3LCJqdGkiOiJhbHVyMGIwV0FiTTFaMGl0Iiwic3ViIjo2MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.kdsAwQX72kS8svsoU7kYoq3xc6NyDNk0F3KIMxGIKsY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "countrequestqwerty",
+											"type": "text"
+										},
+										{
+											"key": "comment_id",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"formdata": {}
+									}
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/LiveCountHost",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"LiveCountHost"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dual Live Streaming Status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dvbmdhbGl2ZV9jb1wvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjA0OTA4MTM0LCJleHAiOjE2MTc4NjgxMzQsIm5iZiI6MTYwNDkwODEzNCwianRpIjoiQnYwSWZMN1lzYVFzSENpMCIsInN1YiI6MjUsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.zRdzTWIQfRHcoC76_VHMnCrn82NVYTQmBCZJwp2U7no",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "countrequest",
+											"type": "text"
+										},
+										{
+											"key": "dual_status",
+											"value": "rejected",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/DualLiveStreamingStatus",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"DualLiveStreamingStatus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dual Create Live Streaming",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDY4ODc2MjgsImV4cCI6MTYxOTg0NzYyOCwibmJmIjoxNjA2ODg3NjI4LCJqdGkiOiJVbXN6ck83VkVKWXhSMlZjIiwic3ViIjo1MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.n_al29CZkdw6gtu3xDXsXI-G4eruGNUv9Qx41GsLW4c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "u_id",
+											"value": "power_oo7",
+											"type": "text"
+										},
+										{
+											"key": "follow_user",
+											"value": "51",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/DualCreateLiveStreaming",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"DualCreateLiveStreaming"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Common",
+					"item": [
+						{
+							"name": "Forgot Password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "jaymin@mailinator.com",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/forgotPassword",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"forgotPassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset Password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "dan@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "UYui8ZBE",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/resetPassword",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"resetPassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Token",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL21pY29zdHJlYW1cL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTU3MTcxNCwiZXhwIjoxNjEyNTMxNzE0LCJuYmYiOjE1OTk1NzE3MTQsImp0aSI6IlNqYWhVQldNNGE0VmtHU0siLCJzdWIiOjE5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.J9z3r9x4Ir18dMofzFpmN1l70vuWuy0-hWRYcNCJ6OE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/updateToken",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"updateToken"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cms Page",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDU4NTcxMzcsImV4cCI6MTYxODgxNzEzNywibmJmIjoxNjA1ODU3MTM3LCJqdGkiOiJhbHVyMGIwV0FiTTFaMGl0Iiwic3ViIjo2MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.kdsAwQX72kS8svsoU7kYoq3xc6NyDNk0F3KIMxGIKsY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/CmsPage",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"CmsPage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Conversions",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5jb1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTgxNTUzNSwiZXhwIjoxNjEyNzc1NTM1LCJuYmYiOjE1OTk4MTU1MzUsImp0aSI6IkkzSHRSQm1jeElTNnZOc2YiLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3XDr94wFtHH1A2xcnIZA34kKn6Pr58WmDPMttZ6JjY4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "sent_to",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "hii",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/CreateConversions",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"CreateConversions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Conversions",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5jb1wvYXBpXC9sb2dpbiIsImlhdCI6MTU5OTgxODAzMSwiZXhwIjoxNjEyNzc4MDMxLCJuYmYiOjE1OTk4MTgwMzEsImp0aSI6IkJEZGRZNHZ2T1hYSXNkazAiLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-pbLxejLvgr0GWJJixb3myhL17DpP91kFj7AJByA-AU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "sent_to",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/getconversions",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"getconversions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Home Screen",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93b25nYWxpdmUuYWlzdGVjaG5vbGFicy5wcm9cL2FwaVwvbG9naW4iLCJpYXQiOjE2MDY5OTYxNjYsImV4cCI6MTYxOTk1NjE2NiwibmJmIjoxNjA2OTk2MTY2LCJqdGkiOiJaVTNSQWZ4UWUwcm1aV1lrIiwic3ViIjo1MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-ijfNKCRte9Ua1nYdQ5EquhYexfTkrm1HSl_JLZGLjI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "serachingValue",
+											"value": "megan",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://wongalive.aistechnolabs.pro/api/homescreen",
+									"protocol": "http",
+									"host": [
+										"wongalive",
+										"aistechnolabs",
+										"pro"
+									],
+									"path": [
+										"api",
+										"homescreen"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "433c906c-f357-4f70-b7c6-854384cdb38a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3bd9ecc4-3d39-460a-a598-63038e948c98",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

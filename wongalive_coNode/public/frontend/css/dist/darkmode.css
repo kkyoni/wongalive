@@ -1,0 +1,405 @@
+body.dark-mode{
+	color: #fff;
+}
+.dark-mode .main-sidebar{
+	background-color:#001e31;	
+}
+.dark-mode.skin-blue .main-header .navbar{
+	background-color:#001e31;
+}
+
+.dark-mode header.navbar-inverse{
+	background:#001e31;
+}
+.dark-mode .main-footer{
+	background:#001e31;
+	border-top: 1px solid #2d6082;
+	color: #fff;
+}
+.dark-mode .mode a{
+	color: #fff;
+}
+.dark-mode .btn-square{
+	color: #fff;
+}
+.dark-mode header.navbar-inverse .header-right ul li .pro-dropdown button{
+	color: #fff;
+}
+.dark-mode .content-wrapper{
+	background-color:#0f3954;	
+}
+.dark-mode .bg-white{
+	background:#001e31;
+}
+.dark-mode .home-tab .nav-tabs{
+	border-bottom: 2px solid #2d6082;
+}
+.dark-mode .win-user-list .user-detail h4{
+	color: #fff;
+}
+.dark-mode .win-user-list .user-detail .user-detail-right p{
+	color: #fff;
+}
+.dark-mode .win-user-list .user-detail .user-detail-right p b{
+	color: #adadad;
+}
+.dark-mode .foot-nav ul li a{
+	color: #fff;
+}
+.dark-mode .main-header .navbar .sidebar-toggle{
+	color: #fff;
+}
+.dark-mode .charbar{
+	background:#001e31;
+}
+.dark-mode .charbar .title{
+	background:rgb(0, 30, 49);
+	color: #fff;
+}
+.dark-mode .charbar .member_list #chatscroll li{
+	background-color: #0f3954;
+	border:2px solid #001e31;
+}
+.dark-mode .charbar .member_list #chatscroll li .chat-user-name .cun-left{
+	color: #fff;
+}
+.dark-mode .charbar .member_list #chatscroll li .chat-user-name .cun-right{
+	color: #ccc;
+}
+.dark-mode .charbar .member_list #chatscroll li .chat-body .header_sec{
+	color: #ccc;
+}
+.dark-mode .charbar .member_list .message_write{
+	background:#0f3954;
+	border:2px solid #001e31;
+	box-shadow: 0px 0px 4px 0px #09456b;
+	-webkit-box-shadow: 0px 0px 4px 0px #09456b;
+	-moz-box-shadow: 0px 0px 4px 0px #09456b;
+	-o-box-shadow: 0px 0px 4px 0px #09456b;
+	-ms-box-shadow: 0px 0px 4px 0px #09456b;
+}
+.dark-mode .charbar .member_list .message_write .chat_html .chat_input{
+	background-color: #0e3751;
+	color: #fff;
+}
+.dark-mode .charbar .member_list .message_write .chat_html .chat-send{
+	box-shadow: 0 10px 20px -4px #0e3751;
+	-webkit-box-shadow: 0 10px 20px -4px #0e3751;
+	-moz-box-shadow: 0 10px 20px -4px #0e3751;
+	-o-box-shadow: 0 10px 20px -4px #0e3751;
+	-ms-box-shadow: 0 10px 20px -4px #0e3751;
+}
+
+.dark-mode .home-box .imgbox:hover{
+	box-shadow: 0px 5px 3px rgba(132, 197, 239, 0.3);
+}
+
+/* Coinflip Game Css Start */
+.dark-mode .page-title{
+	color: #fff;
+}
+.dark-mode .content .inner_content .coinFlip .cf-row.cf-title{
+	color: #fff;
+}
+.dark-mode .create_game_mdl .modal-content{
+	background:#001e31;
+}
+.dark-mode .create_game_mdl .modal-content .modal-header{
+	color: #fff;
+}
+.dark-mode .create_game_modal .modal-dialog .modal-content .modal-header .close{
+	color: #fff;
+}
+.dark-mode .create_game_modal .modal-dialog .modal-content .user_bet_listing{
+	color: #fff;
+}
+.dark-mode .create_game_modal .modal-dialog .modal-content .user_bet_listing li .bet_input{
+	border:1px solid #0f3954;
+	border-left-color: #0f3954;
+	border-left:7px solid #0f3954;
+}
+.dark-mode .content .inner_content .coinFlip .cf-row .bitcoin .bitcoin-btn i{
+	border:2px solid #ffffff;
+	color: #fff;
+}
+.dark-mode .content .inner_content .coinFlip .cf-row .bitcoin .bitcoin-btn span{
+	color: #fff;
+}
+.dark-mode .create_game_mdl .modal-content .modal-body .player .player_amount{
+	color: #fff;
+}
+.dark-mode .modal .panel-body{
+	color: #fff;
+}
+.dark-mode .watch_mdl .modal-content .coinflip-win-info{
+	background:#0f3954;
+}
+.dark-mode .watch_mdl .modal-content .coinflip-win-info .panel-body .mid-info p{
+	color: #fff;
+}
+.dark-mode .content .inner_content .coinFlip .cf-row.cf-title{
+	border:1px solid #2d6082;
+}
+.dark-mode .content .inner_content .coinFlip .cf-row{
+	border-bottom: 1px solid #2d6082;
+}
+.dark-mode .manual-auto-tab .tab-content{
+	background: #001e31;
+	color: #fff;
+}
+.dark-mode .btn.tab-btn-md{
+	color: #fff;
+}
+.dark-mode .count-input input{
+	color: #fff;
+}
+
+/* Coinflip Game Css End */
+
+/* Dice Game Css Start */
+.dark-mode .dice-game .bet-btn-list{
+	background-color: #0f3954;
+	border: 1px solid #2d6082;
+}
+.dark-mode .dice-game .bet-btn-list .bet-btn-list-left{
+	background-color: #0f3954;
+}
+.dark-mode .dice-game .bet-btn-list .bet-btn-list-right{
+	background-color: #0f3954;
+	border-left:1px solid #2d6082;
+}
+.dark-mode .dice-game .bet-btn-list label{
+	color: #fff;
+}
+.dark-mode .dice-game .bet-btn-list .cst-input{
+	color: #fff;
+}
+.dark-mode .win-amt{
+	color: #fff;
+}
+.dark-mode .win-mid-block{
+	color: #fff;
+	background-color: #0f3954;
+}
+.dark-mode .cardfix-div{
+	background-color: #0f3954;
+	border: 1px solid #2d6082;
+}
+.dark-mode .dice-game-slider{
+	background-color: #0f3954;
+	border: 1px solid #2d6082;
+}
+.dark-mode .dice-game-slider .slider-handle.round{
+	border:5px solid #001e31;
+}
+.dark-mode .bet-history .nav-tabs li a{
+	color: #fff;
+	border:2px solid #fff;
+}
+.dark-mode .bet-history .table-striped tbody tr:nth-of-type(2n+1){
+	background-color: #0f3954;
+}
+.dark-mode .table-bordered{
+	border: 1px solid #2d6082;
+}
+.dark-mode .bet-history .table-bordered tbody tr td{
+	border: 1px solid #2d6082;
+}
+.dark-mode .bet-history .table-bordered thead tr th{
+	border-bottom:1px solid #2d6082;
+}
+.dark-mode .dice-game .cardfix-div .cst-input{
+	color: #fff;
+}
+
+/* Dice Game Css End */
+
+/* Highlow Game Css Start */
+.dark-mode .high-low-game .fix-block .panel{
+	border: 1px solid #0f3954;
+	color: #256792;
+	background-color: rgba(15, 57, 84, 0.5);
+}
+.dark-mode .high-low-game .bg-light-gray{
+	background: #0f3954;
+}
+.dark-mode .box_game{
+	border:1px solid #2d6082;
+}
+.dark-mode .inner_bx{
+	background-color: #0f3954;
+}
+.dark-mode .count-input input{
+	border: 1px solid #2d6082;
+}
+.dark-mode .bet_option_btn ul:after{
+	background:#0f3954;
+}
+/* Highlow Game Css End */
+
+/* Jackpot Game Css Start */
+.dark-mode .jackpot-join-user-listscroll-overlay {
+	background: linear-gradient(to bottom, rgba(4, 11, 19, 0.7) 0%, rgba(18, 131, 69, 0.04) 100%);
+}
+.dark-mode .jackpot-join-user-listscroll ul li{
+	color: #fff;
+}
+
+.dark-mode .jackpot-game .bootom-border{
+	border:1px solid #0f3954;
+}
+.dark-mode .jackpot-game .bootom-style{
+	background:#001e31;
+}
+.dark-mode .jackpot-desk .bet-heading{
+	background:#0f3954;
+}
+.dark-mode .prv_val a{
+	color: #9a9a9a;
+}
+
+.dark-mode .bg-jackpot{
+	background:url('/frontend/img/jackpot-bg-blue.png');
+	background-size: cover;
+}
+.dark-mode .jackpot-game .wheel_border{
+	background:#0c1720;
+}
+.dark-mode .jackpot-game .easyWheel .eWheel-inner{
+	box-shadow:0px 0px 10px 5px rgba(15, 57, 84, 0.49);
+}
+.dark-mode .jackpot-game .jackpot-desk {
+	background: #001e31;
+}
+
+
+/* Jackpot Game Css End */
+
+/* Lightning Roullete Css Start */
+.dark-mode .bg-roulatte{
+	background: url('/frontend/img/casino-bg-blue.png');
+	background-size: cover;
+}
+.dark-mode .winner-user-listscroll-overlay{
+	background: linear-gradient(to bottom, rgba(0, 30, 49, 0.84) 0%, rgba(18, 131, 69, 0.04) 100%);
+}
+.dark-mode .prev-num-list{
+	border: 2px solid #001e31;
+	background: #0070c7;
+}
+.dark-mode .tble_ttl{
+	background: #001e31;
+}
+.dark-mode .roulette-coin .green{
+	background: rgba(0, 30, 48, 0.46);
+	border:2px solid #001e31;
+}
+.dark-mode .roulette-coin .green.hover {
+    background: #001e31 !important;
+}
+.dark-mode .roulette-coin .sector{
+	background: #0070c7;
+	border:2px solid #001e31;	
+}
+.dark-mode .roulette-coin .sector.hover { 
+    background: #001e31 !important;
+}
+
+.dark-mode header.navbar-inverse .header-right ul li .user_main_balance {color:#fff }
+
+
+/* Lightning Roullete Css End */
+
+
+
+/* Blackjack Css Start */
+.dark-mode #money{
+	border:2px solid #ffffff;
+}
+.dark-mode #cash, .dark-mode #bank{
+	color: #fff;
+}
+.dark-mode #game{
+	background:transparent url('/frontend/img/blackjack-light-dark-mode.png') 0 0 no-repeat;
+	height: 530px;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    background-size: contain;
+}
+.dark-mode .eWheel-wrapper .eWheel-marker svg path{
+	fill:rgba(19, 79, 134, 0.7);
+}
+
+
+
+/* Profile Page Css Start */
+.dark-mode .profile-pic-select{
+	border: 1px solid #2d6082;
+	color: #fff;
+}
+.dark-mode .profile-info .bal-detail .bal-box{
+	border:1px solid #2d6082;
+}
+.dark-mode .profile-info .bal-detail .bal-box .avlbl-bal{
+	background-color: #001e31;
+}
+.dark-mode .profile-info .bal-detail .bal-list p{
+	color: #fff;
+}
+.dark-mode .btn-blue-brder{
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, .5);
+}
+.dark-mode .inputstyle-1 label input{
+	background:transparent;
+	border:1px solid #2d6082;
+}
+.dark-mode .inputstyle-1 label span{
+	color: #fff;
+}
+.dark-mode .profile-info .bal-detail h4{
+	color: #fff;
+}
+.dark-mode .profile-pic-select .radio input[type="radio"]:checked + label img{
+	border:1px solid #fff;
+}
+
+/* Profile Page Css End */
+
+/* Login Page Css Start */
+.dark-mode .modal-content{
+	background-color: #0f3954;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .nav-tabs{
+	border-bottom: 1px solid #2d6082;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .nav-tabs li.active a{
+	color:#fff !important;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .nav-tabs li.active a:after{
+	background: #fff;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .nav-tabs li a{
+	color: #a3a3a3;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .tab-content .checkbox label{
+	color: #fff;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .tab-content .sign-in-form .link-btn{
+	color: #fff;
+}
+.dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .tab-content .sign-in-form .link-btn:hover, .dark-mode .login-register-modal .modal-dialog .modal-content .modal-body .right-section .card .tab-content .sign-in-form .link-btn:focus{
+	color: #a3a3a3 !important;
+}
+
+/* Login Page Css End */
+
+@media only screen and (max-width: 767px){
+	.dark-mode header.navbar-inverse .header-right{
+		background:#001e31;
+	}
+	.dark-mode header.navbar-inverse .header-right.in .mode a{
+		color: #fff;
+	}
+}
